@@ -1,0 +1,15 @@
+<svg width="266" height="266" viewBox="0 0 266 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2719_627)">
+<path d="M133 264.5C205.625 264.5 264.5 205.625 264.5 133C264.5 60.3746 205.625 1.5 133 1.5C60.3746 1.5 1.5 60.3746 1.5 133C1.5 205.625 60.3746 264.5 133 264.5Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="3"/>
+<path d="M197 88H69C66.2386 88 64 90.2386 64 93V116C64 118.761 66.2386 121 69 121H197C199.761 121 202 118.761 202 116V93C202 90.2386 199.761 88 197 88Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="3"/>
+<path d="M81.9998 121C81.1668 143 89.9998 186.7 132 185.5C174 184.3 183.5 142 183 121" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="3"/>
+<path d="M131.5 181C146.688 181 159 168.688 159 153.5C159 138.312 146.688 126 131.5 126C116.312 126 104 138.312 104 153.5C104 168.688 116.312 181 131.5 181Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="3"/>
+<path d="M132 169C139.18 169 145 163.18 145 156C145 148.82 139.18 143 132 143C124.82 143 119 148.82 119 156C119 163.18 124.82 169 132 169Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="3"/>
+<path d="M167.5 142C170.538 142 173 139.538 173 136.5C173 133.462 170.538 131 167.5 131C164.462 131 162 133.462 162 136.5C162 139.538 164.462 142 167.5 142Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="3"/>
+</g>
+<defs>
+<clipPath id="clip0_2719_627">
+<rect width="266" height="266" fill="white" style="fill:white;fill-opacity:1;"/>
+</clipPath>
+</defs>
+</svg>
