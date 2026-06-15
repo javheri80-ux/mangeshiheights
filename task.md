@@ -1,12 +1,5 @@
-- `[x]` Update index.html content (replace old domain, update links to local anchors, update metadata, JSON-LD schemas, and insert blogs section)
-- `[x]` Create disclaimer.html (with core style and header/footer matching index.html)
-- `[x]` Create privacy-policy.html (with core style and header/footer matching index.html)
-- `[x]` Create terms-and-conditions.html (with core style and header/footer matching index.html)
-- `[x]` Create blog.html index page (with core style and header/footer matching index.html)
-- `[x]` Create blog-1.html (targeted post 1)
-- `[x]` Create blog-2.html (targeted post 2)
-- `[x]` Create blog-3.html (targeted post 3)
-- `[x]` Create thankyou.html (thank-you page matching core layout)
-- `[x]` Delete obsolete PHP files in projects/mangeshi-heights/pages/
-- `[x]` Generate sitemap.xml
-- `[x]` Verify all links, layout responsive designs, captcha behaviour, and SEO metadata
+- `[ ]` Update theme colors in style.css and demo-style.css (replace Red/Blue with Gold/Slate)
+- `[ ]` Reorder index.html structure (move Floor Plans after Overview, reorder sections)
+- `[ ]` Recompile utility pages and blogs to match the new styles and header/footer
+- `[ ]` Verify responsiveness, link flows, and layout alignment
+- `[ ]` Commit and push changes to GitHub repository
