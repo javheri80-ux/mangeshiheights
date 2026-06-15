@@ -954,6 +954,9 @@ a.effect-shine:hover {-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6)
                     <div class="form_wrap">
                         <div class="form_wrapper">
                             <form onsubmit="validateCaptcha(event, this)" id="enquiry-form3">
+                                <div class="text-center modal-logo-container" style="text-align: center; margin-top: 15px; margin-bottom: 10px;">
+                                    <span style="font-size: 20px; font-weight: 700; color: #000; font-family: 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #b45309; padding-bottom: 5px; display: inline-block;">Mangeshi Heights</span>
+                                </div>
                                 <div class="enquire1">Enquire</div>
                                 <div class="form-group group-form"> <label>Name *</label> <input type="text" name="name" id="name" class="name-field" maxlength="30" placeholder="Enter Name" required="" onkeydown="return /[input was a-z]/i.test(event.key)"> </div>
                                 <div class="form-group group-form"> <label>Mobile *</label> <input type="text" name="phone" id="phone" class="phone-field" maxlength="10" placeholder="Enter Mobile Number" pattern="[6789][0-9]{9}" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'> </div>
@@ -980,29 +983,25 @@ a.effect-shine:hover {-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6)
     <script src="projects/mangeshi-heights/js/main.js?v=3"></script>
     <script type='text/javascript'>
         $(function () {
-        // show popup after 1 day if closed
-        const lastSubmit = localStorage.getItem('lastSubmit') ? parseInt(localStorage.getItem('lastSubmit'), 10) : dayjs().subtract(2, 'day');
-        const diff = dayjs(new Date()).diff(dayjs(lastSubmit), 'day');
-        if (diff >= 1) {
-        localStorage.removeItem('lastSubmit');
-        var overlay = $('<div id="overlay"></div>');
-        overlay.show();
-        overlay.appendTo(document.body);
-        $('.popup').show();
-        $('.close').click(function () {
-        localStorage.setItem('lastSubmit', new Date().getTime());
-        $('.popup').hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-        });
-        }
-        });
-    </script>
-    <script language="javascript">
-        $(document).ready(function(){
-        $(".refresh").click(function () {
-        $(".imgcaptcha").attr("src","demo_captcha.php?_="+((new Date()).getTime())); 
-        });
+            // Show popup automatically on page load after 1.5 seconds if not closed recently
+            const lastSubmit = localStorage.getItem('lastSubmit') ? parseInt(localStorage.getItem('lastSubmit'), 10) : dayjs().subtract(2, 'day').valueOf();
+            const diff = dayjs(new Date().getTime()).diff(dayjs(lastSubmit), 'day');
+            
+            if (diff >= 1) {
+                localStorage.removeItem('lastSubmit');
+                setTimeout(function() {
+                    $('#modal-1').addClass("md-show");
+                    $('.md-overlay').addClass("show");
+                }, 1500); // 1.5 seconds delay
+            }
+
+            // Set lastSubmit time when closing the modal so it doesn't pop up again for 1 day
+            $('#md-close, .md-overlay').click(function () {
+                localStorage.setItem('lastSubmit', new Date().getTime());
+                $('#modal-1').removeClass("md-show");
+                $('.md-overlay').removeClass("show");
+                return false;
+            });
         });
         
         function clear_form(){
