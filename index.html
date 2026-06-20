@@ -949,30 +949,31 @@ a.effect-shine:hover {-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6)
         </div>
     </footer>
 </div>
-        <div class="md-overlay">
-            <div class="md-modal md-effect-1" id="modal-1">
-                <div class="md-content"> <button class="md-close" id="md-close">x</button>
-                    <div class="form_wrap">
-                        <div class="form_wrapper">
-                            <form onsubmit="validateCaptcha(event, this)" id="enquiry-form3">
-                                <div class="text-center modal-logo-container" style="text-align: center; margin-top: 15px; margin-bottom: 10px;">
-                                    <span style="font-size: 20px; font-weight: 700; color: #000; font-family: 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #b45309; padding-bottom: 5px; display: inline-block;">Mangeshi Heights</span>
-                                </div>
-                                <div class="enquire1">Enquire</div>
-                                <div class="form-group group-form"> <label>Name *</label> <input type="text" name="name" id="name" class="name-field" maxlength="30" placeholder="Enter Name" required="" onkeydown="return /[input was a-z]/i.test(event.key)"> </div>
-                                <div class="form-group group-form"> <label>Mobile *</label> <input type="text" name="phone" id="phone" class="phone-field" maxlength="10" placeholder="Enter Mobile Number" pattern="[6789][0-9]{9}" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'> </div>
-                                <div class="form-group group-form"> <label>Email *</label> <input type="text" name="email" class="email-field e-field" id="email" maxlength="30" placeholder="Enter Email Address *" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required onkeypress='return '> </div>
-                                <div class="form-group group-form"> <label>Captcha *</label>
-                                    <div class="captcha"> <img src="demo_captcha.php" class="imgcaptcha" alt="captcha" /> <img src="projects/mangeshi-heights/images/refresh-black.svg" alt="reload" class="refresh" /> </div> <input id="captcha" placeholder="Enter Captcha *" pattern="[0-9]{4}" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="captcha-bx" maxlength="4" type="text" required="" />
-                                </div>
-                                <div class="form-group submit_box"> <input type="submit" value="Submit" name="submit"> </div> <label id="result"></label>
-                                <p>Call Us Now: +91 8237498373</p>
-                            </form>
-                        </div>
+
+<div class="md-modal md-effect-1" id="modal-1">
+    <div class="md-content"> <button class="md-close" id="md-close">x</button>
+        <div class="form_wrap">
+            <div class="form_wrapper">
+                <form onsubmit="validateCaptcha(event, this)" id="enquiry-form3">
+                    <div class="text-center modal-logo-container" style="text-align: center; margin-top: 15px; margin-bottom: 10px;">
+                        <span style="font-size: 20px; font-weight: 700; color: #000; font-family: 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #b45309; padding-bottom: 5px; display: inline-block;">Mangeshi Heights</span>
                     </div>
-                </div>
+                    <div class="enquire1">Enquire</div>
+                    <div class="form-group group-form"> <label>Name *</label> <input type="text" name="name" id="name" class="name-field" maxlength="30" placeholder="Enter Name" required="" onkeydown="return /[input was a-z]/i.test(event.key)"> </div>
+                    <div class="form-group group-form"> <label>Mobile *</label> <input type="text" name="phone" id="phone" class="phone-field" maxlength="10" placeholder="Enter Mobile Number" pattern="[6789][0-9]{9}" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'> </div>
+                    <div class="form-group group-form"> <label>Email *</label> <input type="text" name="email" class="email-field e-field" id="email" maxlength="30" placeholder="Enter Email Address *" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required onkeypress='return '> </div>
+                    <div class="form-group group-form"> <label>Captcha *</label>
+                        <div class="captcha"> <img src="demo_captcha.php" class="imgcaptcha" alt="captcha" /> <img src="projects/mangeshi-heights/images/refresh-black.svg" alt="reload" class="refresh" /> </div> <input id="captcha" placeholder="Enter Captcha *" pattern="[0-9]{4}" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="captcha-bx" maxlength="4" type="text" required="" />
+                    </div>
+                    <div class="form-group submit_box"> <input type="submit" value="Submit" name="submit"> </div> <label id="result"></label>
+                    <p>Call Us Now: +91 8237498373</p>
+                </form>
             </div>
         </div>
+    </div>
+</div>
+<div class="md-overlay"></div>
+
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
@@ -1176,7 +1177,7 @@ a.effect-shine:hover {-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6)
                 // Try sending to the original endpoint
                 $.ajax({
                     type: 'POST',
-                    url: 'https://formsubmit.co/ajax/javheri80@gmail.com',
+                    url: 'https://formsubmit.co/ajax/7feb28d6252b2106c66547912d8f13df',
                     dataType: 'json',
                     accepts: 'application/json',
                     data: {
